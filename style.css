@@ -52,12 +52,25 @@ color: var(--clr-dark-blue);
 }
 
 /* ===========Components========= */
+
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+
+
 .qr-card {
   background-color: var(--clr-white);
-  width: 305px;
+  max-width: 305px;
   padding: 1em;
   height: 470px;
   border-radius: 1.2em;
+  margin:.938rem;
 }
 
 
